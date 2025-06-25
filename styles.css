@@ -1,22 +1,32 @@
-/* Global Styles */
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Global Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  background: #f5f5f5;
+  background: linear-gradient(120deg, #f3f4f6, #fdfdfd);
   color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 a {
   color: #0077cc;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #ff4b91;
 }
 
-/* Layout Containers */
+/* Container Utility */
 .container {
   width: 90%;
   max-width: 960px;
@@ -26,62 +36,42 @@ a:hover {
 
 /* Header */
 .header {
-  background-color: #1e1e2f;
-  color: #fff;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
   padding: 2rem 0;
   text-align: center;
 }
 
 .header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .tagline {
+  font-size: 1.2rem;
   font-weight: 300;
-  font-size: 1.1rem;
-  margin: 0.5rem 0 1rem;
 }
 
 nav a {
   margin: 0 1rem;
+  color: #ffe;
   font-weight: 600;
 }
 
-/* Sections */
+nav a:hover {
+  color: #ffb6c1;
+}
+
+/* Section Styles */
 .section {
-  background: #fff;
   margin: 2rem 0;
-  padding: 2rem 0;
-  border-radius: 8px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
   font-size: 2rem;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.5rem;
-}
-
-.project.project {
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.project ul {
-  padding-left: 1.2rem;
-  margin: 0.5rem 0;
-}
-
-.project ul li {
-  margin-bottom: 0.4rem;
-  list-style: disc;
-}
-
-/* Footer */
-.footer {
-  background-color: #1e1e2f;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-}
+  color: #1e1e2f;
+  margin
